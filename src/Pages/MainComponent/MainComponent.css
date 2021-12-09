@@ -1,0 +1,70 @@
+#mainBlock {
+  background: url("https://www-growth.scdn.co/static/home/wrapped-homepage-banner-graphic-desktop.svg");
+  background-position: bottom -428px right -1094px;
+  background-repeat: no-repeat;
+  min-width: 1200px;
+  background-color: #f46ebe;
+}
+
+#mainBlock article {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  min-height: 600px;
+  display: flex;
+}
+#mainBlock article .mainLeft {
+  flex-basis: 40%;
+}
+#mainBlock article .mainRight {
+  flex-basis: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainLeft {
+  color: #202f72;
+  margin: 80px 0;
+}
+.mainLeft h5 {
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 30px;
+  letter-spacing: 1px;
+}
+.mainLeft h1 {
+  font-size: 56px;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+p.mainContent {
+  font-size: 20px;
+  padding-bottom: 20px;
+  line-height: 1.5;
+  font-weight: bold;
+  line-height: 30px;
+}
+.button {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.button .button2 {
+  width: 151px;
+  margin-left: 10px;
+}
+.mainText {
+  font-size: 15px;
+  font-weight: bold;
+}
+/* .mainRight figure {
+  background: url("./slider2.svg");
+  background-repeat: no-repeat;
+  background-size: 1714px;
+  background-position: top -64px right -907px;
+  width: 120%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: -153px;
+} */

@@ -1,0 +1,90 @@
+* {
+  list-style: none;
+}
+#footerBlock {
+  background-color: #111;
+}
+#footerBlock nav {
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+  min-height: 600px;
+  display: flex;
+}
+.footerBlock1 {
+  flex-basis: 20%;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 60px;
+}
+#footerBlock .footerBlock1 svg {
+  fill: #fff;
+  width: 150px;
+}
+#footerBlock .footerBlock2 {
+  display: flex;
+  flex-basis: 50%;
+  color: #fff;
+}
+.footerBlock2 {
+  margin-top: 60px;
+  font-size: 16px;
+}
+.block1 {
+  padding: 10px 31px;
+  line-height: 50px;
+}
+.block2 {
+  padding: 12px 28px;
+  line-height: 50px;
+}
+.block3 {
+  padding: 10px 46px;
+  line-height: 50px;
+}
+.footerBlock2 li:hover {
+  color: #1ed760;
+}
+.block1 li:nth-child(1) {
+  cursor: not-allowed;
+  font-size: 12px;
+  color: #ccc;
+}
+.block2 li:nth-child(1) {
+  cursor: not-allowed;
+  font-size: 12px;
+  color: #ccc;
+}
+.block3 li:nth-child(1) {
+  cursor: not-allowed;
+  font-size: 12px;
+  color: #ccc;
+}
+#footerBlock .footerBlock3 .fonts {
+  display: flex;
+  margin-top: 90px;
+}
+.fonts {
+  flex-basis: 20%;
+  justify-content: flex-end;
+  margin-left: 40px;
+}
+.fonts li {
+  padding: 8px 10px;
+}
+.fonts i {
+  padding: 11px 13px;
+  font-size: 20px;
+  border-radius: 100%;
+  background-color: #222326;
+  color: #fff;
+}
+.fonts i:hover {
+  color: #1ed760;
+}
+#footerBlock .global {
+  display: flex;
+  justify-content: flex-end;
+}
+.global i {
+}

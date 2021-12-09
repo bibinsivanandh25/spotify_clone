@@ -1,0 +1,70 @@
+#sectionBlock {
+  background: url("https://content-tooling.spotifycdn.com/images/b236bf87-bfd5-4bcb-b51a-77881073039c_lie_circles.svg");
+  min-width: 768px;
+  background-position: right center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-color: rgb(41, 65, 171);
+}
+#sectionBlock article {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  min-height: 600px;
+  display: flex;
+}
+#sectionBlock article .sectionLeft {
+  flex-basis: 60%;
+}
+#sectionBlock article .sectionRight {
+  flex-basis: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sectionLeft {
+  color: #1ed760;
+  margin: 80px 0;
+}
+.sectionLeft h5 {
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 30px;
+  letter-spacing: 1px;
+}
+.sectionLeft h1 {
+  font-size: 56px;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+p.sectionContent {
+  font-size: 19px;
+  font-weight: bold;
+  padding-bottom: 40px;
+  letter-spacing: 1.5px;
+  line-height: 30px;
+}
+.sectionLeft button {
+  padding: 17px 48px;
+  border-radius: 500px;
+  border: none;
+  font-size: 15px;
+  letter-spacing: 1.8px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #1ed760;
+  color: #2941ab;
+}
+.sectionLeft button:hover {
+  font-size: 16px;
+}
+/* .sectionRight  {
+  background: url("./slider3.svg");
+  width: 120%;
+  height: 100%;
+  background-color: #1ed760;
+  color: #2941ab;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: right center;
+} */

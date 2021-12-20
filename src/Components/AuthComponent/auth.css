@@ -389,3 +389,100 @@ input:hover {
 .btn-spotify button:hover {
   background-color: #ccc;
 }
+
+#authBlock .authContent h1 {
+  font-size: 48px;
+  margin-top: 30px;
+  font-weight: bold;
+}
+#authBlock .authContent .emailAdd {
+  margin-left: 13px;
+  margin-bottom: 20px;
+}
+.btn-button p {
+  margin-top: 17px;
+  font-size: 15px;
+}
+.btn-button p a {
+  text-decoration: none;
+  color: #1db954;
+}
+.btn-button p a:hover {
+  filter: brightness(1.3);
+}
+.btn-send button {
+  color: #fff;
+  letter-spacing: 2.8px;
+  margin-top: 20px;
+}
+#phoneAuth article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 14px;
+  flex-direction: column;
+}
+#phoneAuth article svg {
+  fill: #111;
+  width: 190px;
+  margin-bottom: 20px;
+}
+#phoneAuth article p {
+  border-bottom: 1px solid rgb(224, 210, 210);
+  width: 100%;
+  margin-bottom: 14px;
+}
+.phoneBlock h2 {
+  text-align: center;
+  font-size: 17px;
+  margin-bottom: 17px;
+}
+.phoneBlock {
+  width: 500px;
+  margin: 0 auto;
+}
+.form-auth {
+  text-align: center;
+}
+.form-auth {
+  display: flex;
+  justify-content: space-around;
+}
+.form-auth input {
+  padding: 10px 20px;
+}
+.form-auth input:nth-child(1) {
+  width: 80px;
+}
+.form-auth input:nth-child(2) {
+  flex-basis: 70%;
+}
+.form-auth1 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 19px;
+}
+.checkbox1 {
+  margin-left: 17px;
+}
+.checkbox1 input {
+  width: 20px;
+  height: 20px;
+}
+.checkbox1 span {
+  margin-left: 6px;
+  color: rgb(141, 128, 128);
+}
+.button1 button {
+  background: #1b9646;
+  color: #fff;
+  border: none;
+  padding: 15px 73px;
+  border-radius: 500px;
+  margin-right: 12px;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+.button1 button:hover {
+  filter: brightness(1.2);
+}

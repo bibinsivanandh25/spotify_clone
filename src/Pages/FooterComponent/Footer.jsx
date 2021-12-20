@@ -57,14 +57,51 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-
-        <div children="global">
-          <span>
-            <i class="fal fa-globe"></i>
-          </span>
-          <span>USA</span>
-        </div>
       </nav>
+
+      <main className="footerPart">
+        <div className="global">
+          <div>
+            <span>
+              <i className="fal fa-globe"></i>
+            </span>
+            <span>India (English)</span>
+          </div>
+        </div>
+        <div className="blockFooter">
+          <div className="footer1">
+            <ul>
+              <li>
+                <a href="/">Legal</a>
+              </li>
+              <li>
+                <a href="/">Privacy Center</a>
+              </li>
+              <li>
+                <a href="/">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="/">Cookies</a>
+              </li>
+              <li>
+                <a href="/">About Ads</a>
+              </li>
+            </ul>
+          </div>
+          <div className="footer2">
+            <ul>
+              <li>
+                <a href="/">
+                  <span>
+                    <i class="fal fa-copyright"></i>
+                  </span>{" "}
+                  2021 Spotify AB
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
     </footer>
   );
 };

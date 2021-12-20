@@ -1,9 +1,23 @@
-import React from "react";
+import React, { Fragment } from "react";
 import firebase from "../../firebase";
 import { useState } from "react";
 import { toast } from "react-toastify";
 import { Link, withRouter } from "react-router-dom";
 
+let months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
 const SignupForm = ({ history }) => {
   let [state, setState] = useState({
     email: "",
@@ -44,8 +58,19 @@ const SignupForm = ({ history }) => {
         USER_DATA.user.sendEmailVerification();
         //? we get confirm alert message
         toast.info(confirmMessage);
+
+        //? update profile image
+        USER_DATA.user.updateProfile({
+          displayName: profile_name,
+          photoURL:
+            "https://cdn2.iconfinder.com/data/icons/website-icons/512/User_Avatar-512.png",
+        });
+
+        //? redirect javascript method
+        // window.location.assign("./")
+
         //? redirect to another page
-        history.push("./login");
+        history.push("/login");
       } else {
         //? email not matching error - email not same
         toast.error("confirm email is not matching");
@@ -120,13 +145,22 @@ const SignupForm = ({ history }) => {
         <div className="form-group">
           <label htmlFor="date">What's your date of birth?</label>
           <div className="dateBlock">
-            <input
+            {/* <input
               type="text"
               name="month"
               placeholder="Month"
               value={month}
               onChange={handleChange}
-            />
+            /> */}
+            <select name="month" onChange={handleChange} value={month}>
+              {months.map((val, index) => (
+                <Fragment key={index}>
+                  <option value={val} defaultValue={val[0]}>
+                    {val}
+                  </option>
+                </Fragment>
+              ))}
+            </select>
             <input
               type="text"
               name="dd"

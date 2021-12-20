@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { withRouter } from "react-router";
+import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import firebase from "../../firebase";
 
@@ -68,7 +69,7 @@ const LoginForm = ({ history }) => {
           />
         </div>
         <div className="form-group forgot">
-          <a href="/">Forgot your password?</a>
+          <Link to="/password-rest">Forgot your password?</Link>
         </div>
 
         <div className="form-checkbox">

@@ -1,5 +1,6 @@
 * {
   list-style: none;
+  text-decoration: none;
 }
 #footerBlock {
   background-color: #111;
@@ -8,7 +9,7 @@
   width: 80%;
   margin: 0 auto;
   height: 100%;
-  min-height: 600px;
+  min-height: 500px;
   display: flex;
 }
 .footerBlock1 {
@@ -66,7 +67,6 @@
 }
 .fonts {
   flex-basis: 20%;
-  justify-content: flex-end;
   margin-left: 40px;
 }
 .fonts li {
@@ -74,7 +74,7 @@
 }
 .fonts i {
   padding: 11px 13px;
-  font-size: 20px;
+  font-size: 28px;
   border-radius: 100%;
   background-color: #222326;
   color: #fff;
@@ -82,9 +82,52 @@
 .fonts i:hover {
   color: #1ed760;
 }
-#footerBlock .global {
+
+#footerBlock .footerPart {
+  display: flex;
+  padding: 20px 0px;
+  flex-direction: column;
+}
+.footerPart .blockFooter {
+  display: flex;
+  justify-content: space-between;
+}
+.footerPart .global {
   display: flex;
   justify-content: flex-end;
+  margin-right: 316px;
 }
-.global i {
+.footerPart .global span {
+  color: #919496;
+  padding: 0 3px;
+}
+.footerPart .global {
+  font-size: 12px;
+  margin-bottom: 10px;
+  margin-right: 291px;
+}
+.blockFooter .footer1 ul {
+  display: flex;
+}
+.footerPart .footer1 {
+  margin-left: 175px;
+}
+.footerPart .footer2 {
+  margin-right: 292px;
+}
+
+.footer1 ul li {
+  padding: 0 10px;
+}
+.footer1 ul li a,
+.footer2 ul li a {
+  font-size: 18px;
+  color: #919496;
+  font-size: 12px;
+}
+.global span:nth-child(2):hover {
+  color: #1ed760;
+}
+.blockFooter .footer1 a:hover {
+  color: #1ed760;
 }

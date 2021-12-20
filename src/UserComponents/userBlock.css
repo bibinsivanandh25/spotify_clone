@@ -1,17 +1,17 @@
 #userBlock {
   height: 100vh;
 }
-#userBlock article {
+#userBlock > article {
   display: flex;
   height: 100vh;
 }
 .userLeftBlock {
-  flex-basis: 15%;
+  flex-basis: 20%;
   background-color: #000;
 }
 .userRightBlock {
-  flex-basis: 85%;
-  background-color: #121212;
+  flex-basis: 80%;
+  background-color: #5a5a5a;
 }
 .userLeftBlock svg {
   fill: #fff;

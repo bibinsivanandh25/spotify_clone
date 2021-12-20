@@ -1,26 +1,25 @@
 import React from "react";
-import Logo from "../Pages/HeaderComponent/Logo";
+import { Link } from "react-router-dom";
 
 const UserLeftBlock = () => {
   return (
     <div className="userLeftBlock">
-      <Logo />
       <ul className="icons">
         <li>
-          <a href="/">
+          <Link to="/userHome/music-home">
             <i class="fal fa-home"></i>
             <span>Home</span>
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/">
+          <a href="/search">
             <i class="fal fa-search"></i>
             <span>Search</span>
           </a>
         </li>
-        <li>
-          <a href="/">
-            <i class="far fa-books"></i>
+        <li style={{ marginLeft: "-12px" }}>
+          <a href="/library">
+            <span>|| \</span>
             <span>Your Library</span>
           </a>
         </li>
@@ -28,13 +27,13 @@ const UserLeftBlock = () => {
       <div className="icons1">
         <ul>
           <li>
-            <a href="/">
+            <Link to="/userHome/create-play-list">
               <i class="fal fa-plus-square"></i>
               <span>Create PlayList</span>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/">
+            <a href="/songs">
               <i class="fas fa-heart-square"></i>
               <span>Liked Songs</span>
             </a>
@@ -45,7 +44,7 @@ const UserLeftBlock = () => {
         <p></p>
       </div>
       <div className="footer">
-        <a href="/">
+        <a href="/app">
           <i class="fal fa-arrow-circle-down"></i>
           <span>Install App</span>
         </a>

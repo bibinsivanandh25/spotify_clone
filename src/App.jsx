@@ -9,29 +9,62 @@ import Signup from "./Components/AuthComponent/Signup";
 import PageNotFound from "./Pages/PageNotFound";
 import { AuthContextApi } from "./Apis/AuthContext";
 import UserHome from "./UserComponents/UserHome";
+// import Spinner from "./Pages/Spinner/Spinner";
+import ProtectedRoute from "./Helper/ProtectedRoute";
+import PublicRoute from "./Helper/PublicRoute";
+import PasswordReset from "./Components/AuthComponent/PasswordReset";
+import PhoneAuth from "./Components/AuthComponent/PhoneAuth";
+// import ProtectedRoute from "./Helper/ProtectedRoute";
+// import MyFirstPortal from "./Pages/MyFirstPortal";
 
 const App = () => {
-  let USER = useContext(AuthContextApi);
+  let AUTH = useContext(AuthContextApi);
   return (
     <section id="spotifyMainBlock">
       <article>
         <Router>
-          <header>{!USER ? <Navbar /> : ""}</header>
+          {/* <header>{!USER ? <Navbar /> : ""}</header> */}
+          <header>
+            <Navbar />
+          </header>
+
           <ToastContainer />
+          {/* <MyFirstPortal /> */}
           <main>
             <Switch>
-              <Route path="/" exact>
+              <PublicRoute path="/" exact>
                 <Home />
-              </Route>
-              <Route path="/signup" exact>
+              </PublicRoute>
+              <PublicRoute path="/signup" exact>
                 <Signup />
-              </Route>
-              <Route path="/login" exact>
+              </PublicRoute>
+              <PublicRoute path="/login" exact>
                 <Login />
-              </Route>
-              <Route path="/userHome">
+              </PublicRoute>
+
+              <PublicRoute path="/password-rest" exact>
+                <PasswordReset />
+              </PublicRoute>
+
+              <PublicRoute path="/otp" exact>
+                <PhoneAuth />
+              </PublicRoute>
+              {/* {AUTH === null ? (
+                <Spinner />
+              ) : (
+                <Route path="/userHome">
+                  <UserHome />
+                </Route>
+              )} */}
+
+              {/* /react version 4 synatax but it's supporting 5 also */}
+              <ProtectedRoute path="/userHome" component={UserHome} />
+
+              {/* protectedroute for protecting data */}
+              {/* <ProtectedRoute path="/userHome">
                 <UserHome />
-              </Route>
+              </ProtectedRoute> */}
+
               <Route path="*">
                 <PageNotFound />
               </Route>

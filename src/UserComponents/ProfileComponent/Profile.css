@@ -1,0 +1,104 @@
+#profileBlock header {
+  display: flex;
+  align-items: center;
+  height: 30vh;
+  background: #292929;
+  max-height: 500px;
+  min-height: 400px;
+  width: 100%;
+}
+#profileBlock header figure {
+  flex-basis: 25%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+#profileBlock header figure img {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  background-color: #3d3b3b;
+  margin-left: 10px;
+  object-fit: cover;
+}
+#profileBlock header aside {
+  flex-basis: 75%;
+  padding: 0px 18px;
+}
+#profileBlock header aside h1 {
+  font-size: 77px;
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 900;
+}
+#profileBlock header aside h5 {
+  color: #fff;
+  font-weight: lighter;
+  padding: 8px 0;
+}
+#profileBlock header figure:hover ._editIcon {
+  filter: drop-shadow(2px 4px 6px #111);
+  display: block;
+}
+._editIcon {
+  display: none;
+  position: absolute;
+  color: #fff;
+}
+._editIcon i {
+  font-size: 25px;
+  display: block;
+  padding-bottom: 16px;
+  text-align: center;
+  margin: 6px 0;
+}
+#photo_upload_block article {
+  width: 100%;
+  margin-top: 100px;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: column;
+}
+#photo_upload_block ._block {
+  width: 500px;
+  text-align: center;
+  color: #fff;
+  background-color: #282828;
+  padding: 54px;
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 18px;
+  margin: 0 auto;
+}
+
+#photo_upload_block h2 {
+  font-size: 28px;
+  padding: 10px 0;
+}
+#photo_upload_block ._block button {
+  border: none;
+  padding: 10px 31px;
+  font-size: 13px;
+  margin-top: 10px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+#progressSection {
+  display: flex;
+  color: #fff;
+}
+#progressSection > span:nth-child(1) {
+  flex-basis: 95%;
+}
+#progressSection > span:nth-child(2) {
+  flex-basis: 5%;
+  display: flex;
+  justify-content: center;
+}
+progress {
+  width: 100%;
+}

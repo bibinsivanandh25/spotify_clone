@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Section.css";
 
 const MainComp = () => {
@@ -12,7 +13,9 @@ const MainComp = () => {
             Millions of songs and podcasts. No credit card <br />
             needed.
           </p>
-          <button>Get Spotify Free</button>
+          <button>
+            <Link to="/userHome">Get Spotify Free</Link>
+          </button>
         </div>
         <div className="sectionRight"></div>
       </article>
